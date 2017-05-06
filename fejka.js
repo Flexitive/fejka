@@ -57,12 +57,10 @@ server.route({
     .then((data) => transform(data, req.query))
     // Reply.
     .then((data) => {
-      let type = 'text/html; charset=utf-8', body;
+      let type = 'text/html; charset=utf-8', body = data;
       if (typeof data === 'object') {
         if (data.type) type = data.type;
         body = data.body;
-      } else {
-        body = data;
       }
 
       // Cache.
