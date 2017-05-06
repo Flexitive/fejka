@@ -1,0 +1,17 @@
+{
+  "name": "fejka",
+  "version": "0.0.1",
+  "description": "Transform Flexitive creatives on the fly",
+  "author": "Radek Stepan <dev@radekstepan.com> (http://radekstepan.com)",
+  "bin": {
+    "fejka": "./fejka.js"
+  },
+  "dependencies": {
+    "argparse": "1.0.4",
+    "boom": "4.3.1",
+    "got": "6.7.1",
+    "hapi": "16.1.1",
+    "lru-cache": "4.0.2",
+    "md5": "2.2.1"
+  }
+}
