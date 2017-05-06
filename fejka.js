@@ -72,7 +72,7 @@ server.route({
     .catch((err) => {
       reply(Boom.badRequest('Bad!'));
     });
-	}
+  }
 });
 
 server.start(() => {
