@@ -38,10 +38,10 @@ const server = new Hapi.Server();
 server.connection({ port: args.port });
 
 server.route({
-	method: 'GET',
+  method: 'GET',
   // NOTE multiple requests from the same endpoint will be handled in sequence.
-	path: '/{creative_id*}',
-	handler: (req, reply) => {
+  path: '/{creative_id*}',
+  handler: (req, reply) => {
     const { creative_id } = req.params;
     const id = md5(creative_id + JSON.stringify(req.query));
 
