@@ -30,3 +30,6 @@ Now you can make a request to the server passing in a `creative_id` and a bunch 
 $ curl -i -H http://0.0.0.0:8080/<creative_id>?ratio=lock&position=grid
 # returns transformed HTML
 ```
+### Caching
+
+Each unique request URL is cached by the service. If you'd like to always get the latest version of the data, simply pass a timestamp as one of the query parameters, making each request unique.
